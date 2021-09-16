@@ -1,0 +1,8 @@
+Criar um arquivo com extensão .ts
+Transpilar esse arquivo usando tsc + nome do arquivo (apertar tab)
+Executar o arquivo js resultado da transpilação com o node
+
+OU
+
+usar tsc --init para criar um arquivo json
+após isso usar control + shit + B e selecionar a o tsc:build
