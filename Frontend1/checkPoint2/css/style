@@ -1,0 +1,113 @@
+/*Organização do arquivo style.css*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Tag para criação do grid */
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas:
+        'header header'
+        'links main'
+        'footer footer';
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/*Tag body*/
+body {
+    background-image: url("https://d3ugyf2ht6aenh.cloudfront.net/stores/363/165/products/depositphotos_11451061_ds-internet2-58bed3d9cceb2e78dc15929333837604-1024-1024.jpg");
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/*Tag header*/
+header {
+    grid-area: header;
+    /* para gerar uma area neste grid */
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    padding: 1px;
+    background-color: rgb(65, 44, 138);
+    color: white;
+    border: papayawhip 3px solid;
+    border-radius: 5px;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+    height: 150px;
+}
+
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Tag geral para os links */
+.links {
+    grid-area: links;
+    background-image: linear-gradient(to bottom right, rgba(7, 31, 170, 0.87), rgba(127, 160, 190, 0.884));
+    /* Para adicionar um gradiente linear */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+    border: solid 3px white;
+    border-top-left-radius: 20px;
+    /* Para adicionar radius apenas na parte superior esquerda */
+    border-bottom-right-radius: 20px;
+    /* Para adicionar radius apenas na parte inferior direita */
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+
+}
+
+.links h1 {
+    /* Para poder selcionar a tag h1 dentro da classe links */
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+fieldset {
+    border-radius: 5 px;
+    border: solid 2px white;
+    margin: 10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Tags para edição dos botões */
+button {
+    padding: 3px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: rgb(23, 15, 66);
+    transition: ease-in-out;
+    cursor: pointer;
+    /* para transformar o cursor do mouse na mãozinha de seleção */
+    border: none;
+}

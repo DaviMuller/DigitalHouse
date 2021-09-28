@@ -1,0 +1,103 @@
+<!-- GRUPO CHECKPOINT 2 - FRONTEND 1:
+Davi Aponus Müller
+Gabriella Gomes de Lima -->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>O RJ continua lindo</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="h1">Formulário de inscrição</h1> <h3>RIO DE JANEIRO </h3>         
+        </header>
+                                          
+        <main>                           
+        
+        <div class="links">
+           
+            <form> 
+
+                <fieldset>
+                    <legend>Qual seu nome?</legend>
+                    <label for="nome" style="display: block ;"></label>
+                    <input type="text" id="nome" required placeholder="nome completo aqui" maxlength="100">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Digite seu e-mail </legend>
+                    <label for="email" style="display: block ;"></label>
+                    <input type="email" name="email" id="email" required placeholder="e-mail aqui">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Digite um nº de telefone para contato</legend>
+                    <label for="tel" style="display: block ;"></label>
+                    <input type="tel" id="ntelefone" required placeholder="DDD123456789">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Data do seu Nascimento</legend>
+                    <label for="data" style="display: block ;"></label>
+                    <input type="date" id="data" min="1900-01-01" max="2030-31-12" value="2021-01-24">
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Confirme sua Idade</legend>
+                    <input type="radio" name="idade" value="+=18" id="+=18" checked><label for="+=18">Sim, tenho 18 anos
+                        ou mais</label>
+                    <br>
+                    <input type="radio" name="idade" value="-18" id="-18"><label for="-18">Não, tenho menos de 18
+                        anos</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pontos Turisticos</legend>
+                    <div>
+                        <input type="checkbox" name="pontot" id="ca"> <label for="pp">Pão de Açúcar
+                    </div>
+                    <input type="checkbox" name="pontot" id="pm"> <label for="sd">Cristo Redentor
+                        <div>
+                            <input type="checkbox" name="pontot" id="aj"> <label for="sm">Praia de Copacabana
+                        </div>
+                        <input type="checkbox" name="pontot" id="scar"> <label for="bb"> Lapa
+                            <div>
+                                <input type="checkbox" name="pontot" id="sz"> <label for="ac"> Museu do Amanhã
+                            </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Para que está veio/está no RJ</legend>
+                    <div>
+                        <input type="checkbox" name="inter" id="tur"> <label for="pp">Turismo
+                    </div>
+                    <input type="checkbox" name="inter" id="trb"> <label for="sd">Estudo
+                        <div>
+                            <input type="checkbox" name="res" id="aj"> <label for="sm">Residência
+                        </div>
+                        <input type="checkbox" name="est" id="scar"> <label for="bb">Trabalho
+                            
+                </fieldset>
+
+                <fieldset>
+                    <legend>Envio de Formulário</legend>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetar</button>
+                </fieldset>  
+            
+            </form>
+            
+        </div>
+        </main>
+    </div>
+</body>
+
+</html>
